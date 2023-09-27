@@ -97,6 +97,15 @@ img {
     font-style: italic;
 }
 
+.header-logo::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/logo.svg);
+    background-size: cover;
+    background-position: center;
+}
+
 .header-navigation {
     display: flex;
     flex-grow: 1;
@@ -131,15 +140,41 @@ img {
 .header-soc {
 display: flex;
 align-items: center;
+gap: 14px;
 }
 
 .header-soc-item {
-
+    width: 40px;
+    height: 40px;
 }
 
 .header-soc-link {
-
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
 }
+
+.header-coc-icon {
+    fill: currentColor;
+}
+
+.header-soc-link:hover {
+    border-color: rgba(253, 146, 34, 1);
+    color: #FD9222;
+}
+
+/* .header-soc-link:hover {
+    border-color: rgba(253, 146, 34, 1);
+} */
+
+/* .header-soc-link:hover .header-coc-icon {
+    fill: #FD9222;
+} */
 
 /* Main */
 /* Hero */
@@ -150,6 +185,14 @@ align-items: center;
 
 .hero-container {
     background-color: rgba(17, 17, 17, 0.6);
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.40), 
+        rgba(17, 17, 17, 0.40)
+    ),
+    url(../img/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 380px 40px 40px 40px;
     border-radius: 30px;
 }
@@ -166,7 +209,7 @@ align-items: center;
 
 .hero-buttons {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .hero-buy-btn {
@@ -212,6 +255,26 @@ align-items: center;
     line-height: 1.29;
     letter-spacing: -0.03em;
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.hero-botton-btn::after {
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    background-image: url(../img/angle-small-left.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: 16px;
+    transition-duration: 300ms;
+}
+
+.hero-botton-btn:hover::after {
+    background-size: 22px;
 }
 
 /* Features */
