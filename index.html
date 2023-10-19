@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo" href=""
@@ -77,13 +77,70 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">O</button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <div>
+          <button type="button" class="menu-close-btn">X</button>
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Home</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="#made">How it's made?</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="#loved">Chocolate is loved</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="mob-soc-list">
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="instagram"
+            >
+              <svg class="mob-soc-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mob-soc-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mob-soc-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+            Treat yourself or a loved one to our finest ingredients for a moment
+            of pure delight!
           </h1>
           <div class="hero-buttons">
             <button class="hero-buy-btn" type="button">Buy now</button>
@@ -226,21 +283,24 @@
           <h2 class="made-title section-title">How it’s <span>made</span>?</h2>
           <div class="made-wrap">
             <picture class="made-picture">
-              <source 
-                srcset="./img/made.jpg 1x, made-2x.jpg 2x" 
-                media="(min-width: 1166px)">
-              <source 
-                srcset="./img/made-tab.jpg 1x, made-tab-2x.jpg 2x" 
-                media="(min-width: 768px)">
-              <source 
-                srcset="./img/made-mob.jpg 1x, made-mob-2x.jpg 2x" 
-                media="(max-width: 767px)">
-              <img 
-                class="made-img"  
-                src="./img/made.jpg" 
-                alt="Liquid chocolate" 
-                width="600" 
-                height="400" 
+              <source
+                srcset="./img/made.jpg 1x, ./img/made-2x.jpg 2x"
+                media="(min-width: 1166px)"
+              />
+              <source
+                srcset="./img/made-tab.jpg 1x, ./img/made-tab-2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./img/made-mob.jpg 1x, ./img/made-mob-2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="made-img"
+                src="./img/made-tab.jpg"
+                alt="Liquid chocolate"
+                width="614"
+                height="400"
               />
             </picture>
             <div class="made-content">
@@ -292,8 +352,10 @@
           <ul class="products-list">
             <li class="products-item">
               <img
-                srcset="./img/products-img-1.jpg 1x, 
-                        ./img/products-img-1-2x.jpg 2x"
+                srcset="
+                  ./img/products-img-1.jpg    1x,
+                  ./img/products-img-1-2x.jpg 2x
+                "
                 class="products-img"
                 src="./img/products-img-1.jpg"
                 alt="orange"
